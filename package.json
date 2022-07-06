@@ -1,7 +1,7 @@
 {
   "name": "angular-google-charts-13",
   "description": "A wrapper for the Google Charts library written in Angular",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve playground -o",
@@ -9,22 +9,12 @@
     "test": "ng test angular-google-charts",
     "lint": "ng lint playground",
     "release": "standard-version",
-    "postinstall": "ngcc --first-only --create-ivy-entry-points"
+    "ngcc-build": "ngcc --first-only --create-ivy-entry-points"
   },
   "workspaces": [
     "apps/*",
     "libs/*"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.ts": "tslint --fix",
-    "*.{json,html,ts,js,scss,css,yml,md}": "prettier --write"
-  },
   "jest-junit": {
     "outputDirectory": "test-results"
   },
