@@ -1,14 +1,15 @@
 {
   "name": "angular-google-charts-13",
   "description": "A wrapper for the Google Charts library written in Angular",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve playground -o",
-    "build": "ng build angular-google-charts --prod",
+    "build": "ng build angular-google-charts-13 --prod",
     "test": "ng test angular-google-charts",
     "lint": "ng lint playground",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postinstall": "ngcc --first-only --create-ivy-entry-points"
   },
   "workspaces": [
     "apps/*",

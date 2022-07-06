@@ -7,24 +7,24 @@
   },
   "version": 1,
   "newProjectRoot": "apps",
-  "defaultProject": "angular-google-charts",
+  "defaultProject": "angular-google-charts-13",
   "projects": {
-    "angular-google-charts": {
-      "root": "libs/angular-google-charts",
-      "sourceRoot": "libs/angular-google-charts/src",
+    "angular-google-charts-13": {
+      "root": "libs/angular-google-charts-13",
+      "sourceRoot": "libs/angular-google-charts-13/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "libs/angular-google-charts/tsconfig.lib.json",
-            "project": "libs/angular-google-charts/ng-package.json"
+            "tsConfig": "libs/angular-google-charts-13/tsconfig.lib.json",
+            "project": "libs/angular-google-charts-13/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "libs/angular-google-charts/ng-package.prod.json",
-              "tsConfig": "libs/angular-google-charts/tsconfig.lib.prod.json"
+              "project": "libs/angular-google-charts-13/ng-package.prod.json",
+              "tsConfig": "libs/angular-google-charts-13/tsconfig.lib.prod.json"
             }
           }
         },
@@ -32,7 +32,7 @@
           "builder": "@angular-builders/jest:run",
           "options": {
             "configPath": "jest.config.js",
-            "projects": ["libs/angular-google-charts"],
+            "projects": ["libs/angular-google-charts-13"],
             "coverageDirectory": "../../coverage"
           }
         },
@@ -40,8 +40,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/angular-google-charts/tsconfig.lib.json",
-              "libs/angular-google-charts/tsconfig.spec.json"
+              "libs/angular-google-charts-13/tsconfig.lib.json",
+              "libs/angular-google-charts-13/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
